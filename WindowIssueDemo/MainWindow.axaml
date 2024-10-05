@@ -1,0 +1,29 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="using:WindowIssueDemo"
+        mc:Ignorable="d" d:DesignWidth="420" d:DesignHeight="160"
+        x:Class="WindowIssueDemo.MainWindow"
+        Width="420" Height="160"
+        Title="WindowIssueDemo">
+    <Border Background="Gray" BorderBrush="Red" BorderThickness="1">
+      <StackPanel Spacing="4" VerticalAlignment="Center">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="4">
+          <Button Content="SysDecor Full" Click="Button_Click"/>
+          <Button Content="SysDecor BorderOnly" Click="Button_Click_1"/>
+          <Button Content="SysDecor None" Click="Button_Click_2"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="4">
+          <Button Content="No extended Titlebar" Click="Button_Click_3"/>
+          <Button Content="With extended Titlebar" Click="Button_Click_4"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="4">
+          <Button Content="NoChrome" Click="Button_Click_5"/>
+          <Button Content="Prefer Sys Chr" Click="Button_Click_6"/>
+          <Button Content="System Chr" Click="Button_Click_7"/>
+          <Button Content="Default" Click="Button_Click_8"/>
+        </StackPanel>
+      </StackPanel>
+    </Border>
+</Window>
